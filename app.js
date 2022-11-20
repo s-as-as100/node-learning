@@ -33,5 +33,18 @@
 
 
 // Install and setup node js
+// Already installed
 
+
+// 
+// export let r = 12;
+// export let g = 13;
+
+module.exports = {
+    x: 2,
+    y:4,
+    z: function () {
+        return 10
+    }
+}
 
