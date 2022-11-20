@@ -35,3 +35,13 @@
 // Install and setup node js
 
 
+// Core Modules
+
+// InBuild module is inside in programming language
+// console.log is core module --> Global Module
+// fs--> non global module -->
+// example module
+// const fs= require("fs");
+// console.log("code steps");
+// fs.writeFileSync("hello.txt", "hello")
+// Buffer,HTTP
