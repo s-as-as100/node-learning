@@ -13,3 +13,11 @@ function controller(req,resp) {
 }
 
 http.createServer(controller).listen(1000)
+
+
+// Node js is async 
+// 1. Run first Script
+// 2. Run second Script ( complex data )
+//-- it will not wait to finish 2nd script 
+// run third script 
+// continue 
