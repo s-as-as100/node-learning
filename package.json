@@ -1,0 +1,26 @@
+{
+  "name": "node-learning",
+  "version": "1.0.0",
+  "description": "node js learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-as-as100/node-learning.git"
+  },
+  "keywords": [
+    "code",
+    "arif"
+  ],
+  "author": "mohd arif",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s-as-as100/node-learning/issues"
+  },
+  "homepage": "https://github.com/s-as-as100/node-learning#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
