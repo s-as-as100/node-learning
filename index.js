@@ -1,32 +1,49 @@
-const fs = require("fs");
+//  Asynchronous Basics in Node js 
 
-const path = require("path");
-const dirPath =path.join(__dirname,'crud');
-const filePath=`${dirPath}/apple.txt`;
- // create file
-//  fs.writeFileSync(filePath,'this is demo');
+// In Synchronous operations tasks are performed one at  a time
 
-//Read file
-// fs.readFile(filePath,'utf-8',(err,item)=>{
-// console.log(item) 
-// })
-// Without Utf-8 parameter file read show like Buffer <Buffer 74 68 69 73 20 69 73 20 64 65 6d 6f>
+// In Asynchronous operations , Second task do not wait to finish
+// the first task  
 
-// Update file 
-// fs.appendFile(filePath,'and file ins apple.txt',(err) => {
-//     if(!err) {
-//         console.log('file is updated successfully')
-//     }
-// })
+// Example --> Advantage
 
-// rename
+console.log("Start execution");
 
-// fs.rename(filePath,`${dirPath}/fruit.txt`,(err) => {
-//     if(!err) {
-//         console.log('file name is updated successfully')
-//     }
-// })
+setTimeout(() => {
+    console.log('Logic execution')
+}, 2000);
 
-// delete file
+console.log('Complete execution');
 
-fs.unlinkSync(`${dirPath}/fruit.txt`)
+// Output :
+// Start execution-->Complete execution-->Logic execution 
+// Because Js is Asynchronous Programming Language
+
+// Disadvantages :
+let a= 10;
+let b=0;
+
+setTimeout(() => {
+    b=20;
+}, 2000);
+
+console.log(a+b);
+
+// Output : 10 Because it dont run console.log again this is 
+// drawback of asychronous programming language
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
