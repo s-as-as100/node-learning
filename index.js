@@ -1,49 +1,18 @@
-//  Asynchronous Basics in Node js 
+ // Handle Asynchronous Data in Node js
+// let a=20;
+// let b=0;
 
-// In Synchronous operations tasks are performed one at  a time
+// let waitingData= new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve(300)
+//      }, 2000);
+//  })
 
-// In Asynchronous operations , Second task do not wait to finish
-// the first task  
+//  waitingData.then((data)=>{
+//     b= data;
+//     console.log(a+b,"handle Asynchronous Data using Promise")
+//  })
 
-// Example --> Advantage
+//  console.log(a+b)
 
-console.log("Start execution");
-
-setTimeout(() => {
-    console.log('Logic execution')
-}, 2000);
-
-console.log('Complete execution');
-
-// Output :
-// Start execution-->Complete execution-->Logic execution 
-// Because Js is Asynchronous Programming Language
-
-// Disadvantages :
-let a= 10;
-let b=0;
-
-setTimeout(() => {
-    b=20;
-}, 2000);
-
-console.log(a+b);
-
-// Output : 10 Because it dont run console.log again this is 
-// drawback of asychronous programming language
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
