@@ -1,22 +1,22 @@
- // How Node js Works
- // Call Stack      {
- // Node Api           This is show Event loop
- // Callback Queue    }
- 
- // call stack ka kam hai ye registeration karega ki konsa funtion
- // Phle Call karega or konsa baad mein
+// What is Express js
+// Express js is framwork of node js ;
 
+const express = require('express');
+const app = express();
 
+app.get('',(req,res)=>{
+    res.send('Hello , this is home page')
+})
+app.get('/about',(req,res)=>{
+    res.send('Hello , this is About page')
+});
 
- // Call Stack 
- // main () call if only single line of code run 
- // main () out from call stack after call function is execute 
- // If anyone funtion execution stop ,then it call out from call stack
+app.get('/help',(req,res)=>{
+    res.send('Hello , this is Help page')
+});
+// restart server if add any code :
+app.listen(4000);
 
-
-// Anything is outside the js is part of Node Api
-// like setTimeout(2sec) // part of c++
-// js:92% , C++ , c -> 8%
 
 
 
