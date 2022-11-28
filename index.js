@@ -19,6 +19,9 @@ app.get("/about", (_, res) =>{
 app.get("/home", (_, res) =>{
     res.sendFile(`${publicPath}/home.html`);
 })
+app.get("*", (_, res) =>{
+    res.sendFile(`${publicPath}/noPage.html`);
+})
 
 // static load the content of static file
 
