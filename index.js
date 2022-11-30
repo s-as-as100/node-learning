@@ -24,11 +24,47 @@ app.get("/", (_, res) =>{
 
 app.get("/profile", (_, res) =>{
     let user = {
-        name:'Mohd arif',
+        name:'Mohd arif', 
         profession:'Associate Software Development Engineer',
-        city:'New Delhi'
+        city:'New Delhi',
+        skills:['html','Css', 'Javascript','React js', 'Antd','Firebase']
     }
     res.render('profile',{user})
  })
+ app.get("/login", (_, res) =>{
+    let user = {
+        name:'Mohd arif', 
+        profession:'Associate Software Development Engineer',
+        city:'New Delhi',
+        skills:['html','Css', 'Javascript','React js', 'Antd','Firebase']
+    }
+    res.render('login',{user})
+ })
+ app.listen(3000);
 
- app.listen(3000)
+
+
+
+
+
+
+
+
+
+// hello 1
+// 110
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
