@@ -1,16 +1,16 @@
-// connect nodejs server to nodejs
-const {MongoClient} = require('mongodb');
-// path of mongodb 
-const url ='mongodb://localhost:27017';
-let dataBase ='E-commerce';
-const client = new MongoClient(url);
+const dbConnect = require('./mongodb')
+// first way to handle promise
+// dbConnect().then((resp) => {
+//     // toArray also return Promise
+//   resp.find({}).toArray().then((data)=>console.log(data));
+// });
+// console.log(dbConnect());
 
-async function getData() {
-    let result = await client.connect();
-    let db =result.db(dataBase);
-    // collection name
-    let collection = db.collection('products');
-    let response = await collection.find({}).toArray()
-    console.log(response);
-}
-getData()
+// 2nd way to handle promise
+const main = async () => {
+  // console.log('main function call')
+  let data = await dbConnect();
+  data = await data.find().toArray();
+  console.log(data);
+};
+main();
