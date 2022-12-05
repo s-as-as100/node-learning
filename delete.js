@@ -1,6 +1,6 @@
 const dbConnect = require('./mongodb');
 
-const deleteData = async() =>{
+const deleteData = async() => {
     const data = await dbConnect();
     const result = await data.deleteMany({name:'note pro 5'})
     console.log(result);
@@ -8,4 +8,4 @@ const deleteData = async() =>{
         console.log('delete data successfully')
     }
  }
-deleteData()
+deleteData();

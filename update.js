@@ -8,7 +8,7 @@ const updateData = async () => {
     // first object use for condition {
     { name: "note 5" },
     {
-      $set: { name: "max pro 5T", price:1 },
+      $set: { name: "max pro 5T", price: 1 },
     }
   );
   console.log(result);
